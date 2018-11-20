@@ -9,8 +9,7 @@ CSV Parser can be installed by downloading [index.js](https://github.com/steveny
     $ npm install
 
 
-Get Started
------------
+## Get Started
 
 To use the module, require the index.js file to your project and create a new instance
 
@@ -44,4 +43,12 @@ let result = parser.parse("a,b,c\nd,e,f");
 console.log(result); // [["a", "b", "c"], ["d", "e", "f"]]
 
 ```
+
+## Testing
+
+CSV parser uses Jest Test Suite. Tests can be added at [index.test.js](https://github.com/stevenyslee/csv-parser/tree/master/tests) and run using:
+
+    $ npm run test
+
+![alt text](https://github.com/stevenyslee/csv-parser/blob/master/tests/img.png)
 
