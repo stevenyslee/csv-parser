@@ -4,7 +4,7 @@ CSV Parser for Node.js
 Install
 -------
 
-CSV Parser can be installed by downloading [index.js](https://github.com/stevenyslee/csv-parser) to your project source.
+CSV Parser can be installed by downloading [index.js](https://github.com/stevenyslee/csv-parser) to your project source and requiring the module. You will only need to install the repo if you are interested in testing the module.
 
     $ npm install
 
@@ -42,6 +42,10 @@ let result = parser.parse("a,b,c\nd,e,f");
 
 console.log(result); // [["a", "b", "c"], ["d", "e", "f"]]
 
+
+let optionalParameters = parser.parse("|the '\t' won't create new columns because it was|\tin\tquotes", "\t", "|"))
+
+console.log(optionalParameters); // [["the '\t' won't create new columns because it was", "in", "quotes"]]
 ```
 
 ## Testing
