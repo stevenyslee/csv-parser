@@ -50,7 +50,7 @@ console.log(optionalParameters); // [["the '\t' won't create new columns because
 
 ## Testing
 
-CSV parser uses Jest Test Suite. Tests can be added at [index.test.js](https://github.com/stevenyslee/csv-parser/tree/master/tests) and run using:
+CSV Parser uses Jest Test Suite. Tests can be added at [index.test.js](https://github.com/stevenyslee/csv-parser/tree/master/tests) and run using:
 
     $ npm run test
 
