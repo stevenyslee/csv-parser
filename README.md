@@ -6,9 +6,42 @@ Install
 
 CSV Parser can be installed by downloading [index.js](https://github.com/stevenyslee/csv-parser) to your project source.
 
-    const CSV = require("./index.js");
+    $ npm install
+
 
 Get Started
 -----------
 
+To use the module, require the index.js file to your project and create a new instance
+
+    const CSV = require("./index.js");
+    const parser = new CSV();
+
+## Usage
+
+```js
+/**
+ * Parse CSV file contents
+ * @param {string} [contents=] - The contents of the CSV file
+ * @param {string} [delimiter=,] - The CSV file delimiter
+ * @param {string} [quote=\"] - The CSV file quotes
+ */
+CSV.prototype.parse = function(contents, delimiter, quote) {
+    // ...
+};
+
+```
+
+
+### Example 
+
+```js
+const CSV = require("./index.js");
+const parser = new CSV();
+
+let result = parser.parse("a,b,c\nd,e,f");
+
+console.log(result); // [["a", "b", "c"], ["d", "e", "f"]]
+
+```
 
